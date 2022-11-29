@@ -74,14 +74,28 @@ void CRemoteGibme::GameFrame(client_state_t state, double frametime, bool bPostR
 {
 }
 
-PLUGIN_RESULT CRemoteGibme::Draw(void)
+void CRemoteGibme::Draw(void)
 {
-	return PLUGIN_CONTINUE;
 }
 
-PLUGIN_RESULT CRemoteGibme::DrawHUD(float time, int intermission)
+void CRemoteGibme::DrawHUD(float time, int intermission)
 {
-	return PLUGIN_CONTINUE;
+}
+
+void CRemoteGibme::OnFirstClientdataReceived(client_data_t* pcldata, float flTime)
+{
+}
+
+void CRemoteGibme::OnBeginLoading(void)
+{
+}
+
+void CRemoteGibme::OnEndLoading(void)
+{
+}
+
+void CRemoteGibme::OnDisconnect(void)
+{
 }
 
 const char* CRemoteGibme::GetName(void)
